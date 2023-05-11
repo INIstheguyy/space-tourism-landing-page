@@ -1,0 +1,12 @@
+.home-desktop{
+    background-image: url(../assets/home/background-home-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    max-width: 100vw;
+    height: 100vh;
+}
+
+.list-container{
+    background: rgba(255, 255, 255, 0.04);
+backdrop-filter: blur(40.7742px);
+}

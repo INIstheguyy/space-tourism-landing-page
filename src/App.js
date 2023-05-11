@@ -1,11 +1,18 @@
 import React from "react";
 import './index.css'
+import styles from "./styles";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from "./components/Home/Home";
 
 function App() {
   return (
-    <>
-      <h1 className=" bg-color2 text-color1 font-heading1">Hello word</h1>
-    </>
+    <Router>
+      <div  className={`${styles.boxWidth}`}>
+        <Routes>
+        <Route path="/" element={<Home/>} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
