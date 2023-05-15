@@ -1,6 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+img {
+    -webkit-tap-highlight-color: transparent; /* For iOS */
+    -webkit-touch-callout: none; /* For iOS */
+    user-select: none;
+    -webkit-user-select: none; /* For Android */
+    -moz-user-select: none; /* For Firefox */
+    -ms-user-select: none; /* For Internet Explorer/Edge */
+  }
+  
+   
+
+  .parent-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px; /* Increase the width by 50px */
+    height: 200px; /* Increase the height by 50px */
+    border-radius: 50%; /* Make the container rounded */
+    overflow: hidden; /* Clip the child container to fit the rounded shape */
+  }
+  
+  .child-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    background-color: white; /* Replace with your color variable or value */
+    border-radius: 50%;
+  }
+  
+  .parent-container::after {
+    content: '';
+    position: absolute;
+    top: -25px; /* Adjust the position to maintain the centered effect */
+    left: -25px; /* Adjust the position to maintain the centered effect */
+    width: 250px; /* Increase the width by 50px */
+    height: 250px; /* Increase the height by 50px */
+    background-color: rgba(255, 255, 255, 0.2); /* Adjust the opacity value */
+    border-radius: 50%; /* Make the overlay rounded */
+    transition: opacity 0.3s;
+    pointer-events: none; /* Ensure the overlay doesn't interfere with interactions */
+  }
+  
+  .parent-container:hover::after {
+    background-color: rgba(255, 255, 255, 0.4); /* Adjust the opacity value */
+  }
+  
+
+  @media screen  and (min-width: 1095px){
+    .parent-container{}
+}
+  
+  
+
