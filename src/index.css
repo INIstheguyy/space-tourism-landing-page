@@ -57,7 +57,18 @@ img {
   
 
   @media screen  and (min-width: 1095px){
-    .parent-container{}
+    .parent-container{
+        width: 250px;
+        height: 250px;
+    }
+    .parent-container::after{
+        width: 350px;
+        height: 350px;
+    }
+    .child-container{
+        width: 200px;
+        height: 200px;
+    }
 }
   
   
