@@ -23,7 +23,7 @@ const Navbar = () => {
                       <Link to='/destination'><span className='font-heading2 font-bold text-base leading-tight tracking-wider'>01</span> DESTINATION</Link> 
                     </p>
                     <p className='my-5 font-normal text-base leading-tight tracking-wider' style={{ backdropFilter: 'none' }}>
-                      <Link to=''><span className='font-heading2 font-bold text-base leading-tight tracking-wider'>02</span> CREW</Link>
+                      <Link to='/crew'><span className='font-heading2 font-bold text-base leading-tight tracking-wider'>02</span> CREW</Link>
                     </p>
                     <p className='my-5 font-normal text-base leading-tight tracking-wider' style={{ backdropFilter: 'none' }}>
                     <Link to=''><span className='font-heading2 font-bold text-base leading-tight tracking-wider'>03</span> TECHNOLOGY</Link>
@@ -40,7 +40,7 @@ const Navbar = () => {
                 <ul className='list-none sm:list-none sm:flex  justify-end items-center flex-1 flex-wrap  bg-opacity-4 backdrop-blur-41  '>
                     <li className=' text-white  mr-10  h-[19px] text-base font-normal tracking-widest leading-tight font-heading2'> <Link to='/'> <span className='text-base font-semibold tracking-widest leading-tight'>00</span> HOME</Link></li>
                     <li className=' text-white  mr-10  h-[19px] text-base font-normal tracking-widest leading-tight font-heading2'> <Link to='/destination'><span className='text-base font-semibold tracking-widest leading-tight'>01</span> DESTINATION</Link> </li>
-                    <li className=' text-white  mr-10  h-[19px] text-base font-normal tracking-widest leading-tight font-heading2'> <Link to=''> <span className='text-base font-semibold tracking-widest leading-tight'>02</span> CREW</Link></li>
+                    <li className=' text-white  mr-10  h-[19px] text-base font-normal tracking-widest leading-tight font-heading2'> <Link to='/crew'> <span className='text-base font-semibold tracking-widest leading-tight'>02</span> CREW</Link></li>
                     <li className=' text-white  mr-24  h-[19px] text-base font-extralight tracking-widest leading-tight font-heading2'> <Link to=''><span className='text-base font-bold tracking-widest leading-tight'>03</span> TECHNOLOGY</Link> </li>
                 </ul>
             </div> 
