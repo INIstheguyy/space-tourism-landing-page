@@ -20,11 +20,6 @@ module.exports = {
         md:'768px',
         lg:'1095px',
         xl:'1440px'
-      },
-      backgroundImage:{
-        'home-desktop':'./src/assets/home/background-home-desktop.jpg',
-        'home-tablet':'./src/assets/home/background-home-tablet.jpg',
-        'home-mobile':'./src/assets/home/background-home-mobile.jpg'
       }
     },
   },

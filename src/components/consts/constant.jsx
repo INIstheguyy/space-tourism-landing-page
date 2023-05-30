@@ -1,6 +1,6 @@
  export const destination = {
     "moon": {
-        "name": "Moon",
+        "name": "MOON",
       "images": {
         "png": "/assets/destination/image-moon.png",
         "webp": "/assets/destination/image-moon.webp"

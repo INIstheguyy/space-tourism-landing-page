@@ -8,7 +8,9 @@ const Navbar = () => {
     return ( 
         
         <nav className=' flex justify-between items-center p-5'>
-            <img src={icon} alt="" className=" w-[40px] h-[40px] " />
+            <Link to='/'>
+              <img src={icon} alt="" className=" w-[40px] h-[40px]"/>
+            </Link>
             <div className=" md:hidden flex flex-1 justify-end items-center">
                 <img onClick={() => setToggle((prev) => !prev)}  src={toggle ? close : menu} alt="menu" className="outline-none  cursor-pointer object-contain w-[28px] h-[28px]" />
                 <div className={`${toggle ? 'flex' : 'hidden'} p-6 bg-black-gradient absolute top-10 right-0 mx-2 my-4 rounded-xl  min-w-[140px] `}>
