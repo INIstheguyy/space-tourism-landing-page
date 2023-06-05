@@ -10,7 +10,7 @@
       "travel": "3 days"
     },
     "mars": {
-        "name": "Mars",
+        "name": "MARS",
       "images": {
         "png": "./assets/destination/image-mars.png",
         "webp": "./assets/destination/image-mars.webp"
@@ -20,7 +20,7 @@
       "travel": "9 months"
     },
     "europa": {
-        "name": "Europa",
+        "name": "EUROPA",
       "images": {
         "png": "./assets/destination/image-europa.png",
         "webp": "./assets/destination/image-europa.webp"
@@ -30,7 +30,7 @@
       "travel": "3 years"
     },
     "titan": {
-        "name": "Titan",
+        "name": "TITAN",
       "images": {
         "png": "./assets/destination/image-titan.png",
         "webp": "./assets/destination/image-titan.webp"
