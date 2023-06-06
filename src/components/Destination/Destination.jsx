@@ -103,27 +103,27 @@ const Destination = () => {
             {togglePlanetImage()}
           </div>
           <div className=" lg:ml-[200px] ">
-              <div className="text-color3 flex justify-evenly my-5 md:text-[16px] md:px-[50px] py-3 lg:px-0 ">
+              <div className="text-color3 flex justify-center lg:justify-start py-2 ">
                 <p
-                  className={selectedPlanet  ? "hover-underline-animation " : ""}
+                  className= "hover-underline-animation cursor-pointer mx-3" 
                   onClick={() => setSelectedPlanet("moon")}
                 >
                   {destination.moon.name}
                 </p>
                 <p
-                  className={selectedPlanet === "mars" ? "hover-underline-animation " : ""}
+                  className= "hover-underline-animation cursor-pointer mx-3" 
                   onClick={() => setSelectedPlanet("mars")}
                 >
                   {destination.mars.name}
                 </p>
                 <p
-                  className={selectedPlanet === "europa" ? "hover-underline-animation " : ""}
+                  className= "hover-underline-animation cursor-pointer mx-3"
                   onClick={() => setSelectedPlanet("europa")}
                 >
                   {destination.europa.name}
                 </p>
                 <p
-                  className={selectedPlanet === "titan" ? "hover-underline-animation " : ""}
+                  className= "hover-underline-animation cursor-pointer mx-3"
                   onClick={() => setSelectedPlanet("titan")}
                 >
                   {destination.titan.name}
