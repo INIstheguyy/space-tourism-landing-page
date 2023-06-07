@@ -15,16 +15,28 @@ const Crew = () => {
     if (selectedCrew === 'one') {
       return (
         <div>
-          <img className="w-full h-full" src={crew1} alt="" />
-          <hr className="bg-slate-50 h-[70%]" />
+          <img className="" src={crew1} alt="" />
+          <hr className="bg-slate-50 h-[70%] lg:hidden" />
         </div>
       );
     } else if (selectedCrew === 'two') {
-      return <img className="w-full h-full" src={crew2} alt="" />;
+      return (
+        <div className="">
+        <img className="" src={crew2} alt="" />
+        </div>
+      );
     } else if (selectedCrew === 'three') {
-      return <img className="w-full h-full" src={crew3} alt="" />;
+      return (
+        <div className="">
+        <img className="" src={crew3} alt="" />
+        </div>
+      );
     } else if (selectedCrew === 'four') {
-      return <img className="w-full h-full" src={crew4} alt="" />;
+      return (
+        <div className="">
+        <img className="" src={crew4} alt="" />
+        </div>
+      );
     }
   }
 
@@ -67,38 +79,39 @@ const Crew = () => {
   return (
     <div className="crew-desktop w-full h-full">
       <Navbar />
-      <div>
+      <div className=' py-5 lg:px-20 px-5'>
         <h1 className="md:text-[28px] text-center md:text-left font-heading2 text-color3 font-normal text-base leading-tight tracking-[0.3rem]">
-          <span className="text-base font-semibold tracking-widest leading-tight mix-blend-normal opacity-25 px-2 md:px-4">
+          <span className="text-base font-semibold tracking-widest pr-5 leading-tight mix-blend-normal opacity-25 ">
             02
           </span>
           Meet your crew
         </h1>
-        <div className="md:px-20 lg:flex flex-row-reverse mt-5">
-          <div className="px-[100px] py-[25px] lg:w-[100%] lg:p-0">
+        <div className=" lg:flex flex-row-reverse justify-between align-text-bottom mt-5">
+          <div className="px-[10px] py-[25px]  lg:p-0">
             {toggleCrewImage()}
           </div>
-          <div className="lg:ml-[200px] pt-10"> 
-                <div className=' lg:flex flex-col-reverse'>
-                    <div className="flex justify-center lg:justify-start py-2">
+          <div className=" "> 
+                <div className=' lg:flex flex-col-reverse '>
+                  <div className="flex justify-center lg:justify-start py-2 lg:pt-[15%]">
                     <span
-                        className="w-[15px] h-[15px] bg-color3 rounded-full mx-3 cursor-pointer"
-                        onClick={() => setSelectedCrew('one')}
+                      className={`w-[15px] h-[15px] rounded-full mx-3 cursor-pointer ${selectedCrew === 'one' ? 'bg-white' : 'bg-gray-600'} `}
+                      onClick={() => setSelectedCrew('one')}
                     ></span>
                     <span
-                        className="w-[15px] h-[15px] bg-color3 rounded-full mx-3 cursor-pointer"
-                        onClick={() => setSelectedCrew('two')}
+                      className={`w-[15px] h-[15px] rounded-full mx-3 cursor-pointer ${selectedCrew === 'two' ? 'bg-white' : 'bg-gray-600'} `}
+                      onClick={() => setSelectedCrew('two')}
                     ></span>
                     <span
-                        className="w-[15px] h-[15px] bg-color3 rounded-full mx-3 cursor-pointer"
-                        onClick={() => setSelectedCrew('three')}
+                      className={`w-[15px] h-[15px] rounded-full mx-3 cursor-pointer ${selectedCrew === 'three' ? 'bg-white' : 'bg-gray-600'} `}
+                      onClick={() => setSelectedCrew('three')}
                     ></span>
                     <span
-                        className="w-[15px] h-[15px] bg-color3 rounded-full mx-3 cursor-pointer"
-                        onClick={() => setSelectedCrew('four')}
+                      className={`w-[15px] h-[15px] rounded-full mx-3 cursor-pointer ${selectedCrew === 'four' ? 'bg-white' : 'bg-gray-600'} `}
+                      onClick={() => setSelectedCrew('four')}
                     ></span>
-                    </div>
-                    <div>{toggleCrewInfo()}</div>
+                  </div>
+              
+                  <div className=' lg:pt-[40%] pt-[20%]'>{toggleCrewInfo()}</div>
                 </div>
           </div>
         </div>
