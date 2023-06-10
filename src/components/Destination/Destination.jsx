@@ -92,7 +92,7 @@ const Destination = () => {
     <div className="destination-desktop w-full h-full">
       <Navbar />
       <div className="p-5 lg:p-20">
-        <h1 className="md:text-[28px]  text-center md:text-left font-heading2 text-color3 font-normal text-base leading-tight tracking-[0.3rem]">
+        <h1 className="md:text-[28px]  text-center md:text-left font-heading2 text-color3 font-normal uppercase text-base leading-tight tracking-[0.3rem]">
           <span className="text-base font-semibold tracking-widest leading-tight mix-blend-normal opacity-25 px-2 md:px-4">
             01
           </span>

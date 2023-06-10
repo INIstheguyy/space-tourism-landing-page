@@ -15,7 +15,7 @@ const Crew = () => {
     if (selectedCrew === 'one') {
       return (
         <div>
-          <img className="" src={crew1} alt="" />
+          <img className="  " src={crew1} alt="" />
           <hr className="bg-slate-50 h-[70%] lg:hidden" />
         </div>
       );
@@ -80,7 +80,7 @@ const Crew = () => {
     <div className="crew-desktop w-full h-full">
       <Navbar />
       <div className=' py-5 lg:px-20 px-5'>
-        <h1 className="md:text-[28px] text-center md:text-left font-heading2 text-color3 font-normal text-base leading-tight tracking-[0.3rem]">
+        <h1 className="md:text-[28px] text-center md:text-left font-heading2 text-color3 font-normal text-base leading-tight uppercase tracking-[0.3rem]">
           <span className="text-base font-semibold tracking-widest pr-5 leading-tight mix-blend-normal opacity-25 ">
             02
           </span>
@@ -94,19 +94,19 @@ const Crew = () => {
                 <div className=' lg:flex flex-col-reverse '>
                   <div className="flex justify-center lg:justify-start py-2 lg:pt-[15%]">
                     <span
-                      className={`w-[15px] h-[15px] rounded-full mx-3 cursor-pointer ${selectedCrew === 'one' ? 'bg-white' : 'bg-gray-600'} `}
+                      className={`w-[15px] h-[15px] rounded-full mx-3 cursor-pointer ${selectedCrew === 'one' ? 'bg-white' : 'bg-gray-600 hover:bg-white'} `}
                       onClick={() => setSelectedCrew('one')}
                     ></span>
                     <span
-                      className={`w-[15px] h-[15px] rounded-full mx-3 cursor-pointer ${selectedCrew === 'two' ? 'bg-white' : 'bg-gray-600'} `}
+                      className={`w-[15px] h-[15px] rounded-full mx-3 cursor-pointer ${selectedCrew === 'two' ? 'bg-white' : 'bg-gray-600 hover:bg-white'} `}
                       onClick={() => setSelectedCrew('two')}
                     ></span>
                     <span
-                      className={`w-[15px] h-[15px] rounded-full mx-3 cursor-pointer ${selectedCrew === 'three' ? 'bg-white' : 'bg-gray-600'} `}
+                      className={`w-[15px] h-[15px] rounded-full mx-3 cursor-pointer ${selectedCrew === 'three' ? 'bg-white' : 'bg-gray-600 hover:bg-white'} `}
                       onClick={() => setSelectedCrew('three')}
                     ></span>
                     <span
-                      className={`w-[15px] h-[15px] rounded-full mx-3 cursor-pointer ${selectedCrew === 'four' ? 'bg-white' : 'bg-gray-600'} `}
+                      className={`w-[15px] h-[15px] rounded-full mx-3 cursor-pointer ${selectedCrew === 'four' ? 'bg-white' : 'bg-gray-600 hover:bg-white'} `}
                       onClick={() => setSelectedCrew('four')}
                     ></span>
                   </div>

@@ -28,7 +28,7 @@ const Navbar = () => {
                       <Link to='/crew'><span className='font-heading2 font-bold text-base leading-tight tracking-wider'>02</span> CREW</Link>
                     </p>
                     <p className='my-5 font-normal text-base leading-tight tracking-wider' style={{ backdropFilter: 'none' }}>
-                    <Link to=''><span className='font-heading2 font-bold text-base leading-tight tracking-wider'>03</span> TECHNOLOGY</Link>
+                    <Link to='/tech'><span className='font-heading2 font-bold text-base leading-tight tracking-wider'>03</span> TECHNOLOGY</Link>
                     </p>
                   </div>
                 </div>
@@ -38,12 +38,12 @@ const Navbar = () => {
             </div>
             <div className='md:flex hidden items-center '>
             <hr className=' text-color3 w-[473px] max-h-[10px] lg:block hidden  '/>
-            <div className='list-container pr-[8vw] pl-[7vw] pt-[29px] pb-[28px] lg:pl-[4vw] lg:pr-[5vw] '>
+            <div className='list-container pr-[8vw] pl-[7vw] pt-[29px] pb-[28px] lg:pl-[1vw] lg:pr-[1vw] '>
                 <ul className='list-none sm:list-none sm:flex  justify-end items-center flex-1 flex-wrap  bg-opacity-4 backdrop-blur-41  '>
                     <li className=' text-white  mr-10  h-[19px] text-base font-normal tracking-widest leading-tight font-heading2'> <Link to='/'> <span className='text-base font-semibold tracking-widest leading-tight'>00</span> HOME</Link></li>
                     <li className=' text-white  mr-10  h-[19px] text-base font-normal tracking-widest leading-tight font-heading2'> <Link to='/destination'><span className='text-base font-semibold tracking-widest leading-tight'>01</span> DESTINATION</Link> </li>
                     <li className=' text-white  mr-10  h-[19px] text-base font-normal tracking-widest leading-tight font-heading2'> <Link to='/crew'> <span className='text-base font-semibold tracking-widest leading-tight'>02</span> CREW</Link></li>
-                    <li className=' text-white  mr-24  h-[19px] text-base font-extralight tracking-widest leading-tight font-heading2'> <Link to=''><span className='text-base font-bold tracking-widest leading-tight'>03</span> TECHNOLOGY</Link> </li>
+                    <li className=' text-white  mr-24  h-[19px] text-base font-extralight tracking-widest leading-tight font-heading2'> <Link to='/tech'><span className='text-base font-bold tracking-widest leading-tight'>03</span> TECHNOLOGY</Link> </li>
                 </ul>
             </div> 
         </div>
